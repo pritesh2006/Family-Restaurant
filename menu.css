@@ -1,0 +1,249 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: #e2e1e1;
+}
+
+/* Header Style */
+.menu-header {
+    background-color: #f9a825;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 5px solid #000;
+    flex-wrap: wrap;
+}
+
+.logo-circle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.logo-circle {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9a825;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.menu-title {
+    flex: 2;
+    text-align: center;
+}
+
+.menu-title h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.menu-title p {
+    font-size: 1rem;
+    font-style: italic;
+    margin: 5px 0 0;
+}
+
+.open-hours {
+    flex: 1;
+    text-align: right;
+    font-size: 14px;
+}
+
+.open-hours p {
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}*
+
+.menu-container{
+    max-width: 950px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h1::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(59, 59, 59);
+    margin: 20px;
+}
+
+
+h1::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(59, 59, 59);
+    margin: 20px;
+}
+
+.menu-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    background: #f8f8f8;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.menu-item img {
+    width: 130px;
+    height: 130px;
+    border-radius: 12px;
+    border: 2px dashed red;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.menu-item div {
+    flex-grow: 1;
+}
+
+.menu-item h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+.menu-item span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #c94c1b;
+    font-weight: bold;
+}
+
+.menu-item p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+}
+
+
+.desert-beverage{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+
+
+}
+
+.desert-beverage div{
+    text-align: left;
+}
+
+.desert-beverage div h4{
+    font-size: 20px;
+    color: rgb(43, 42, 42);   
+}
+
+
+.desert-beverage div ul{
+    list-style: none;
+    padding: 0;
+}
+
+.desert-beverage div ul li{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    border-radius: 1px solid #ddd;
+}
+
+.menu-footer {
+    background-color: #f9a825;
+    color: #000;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+    border-top: 5px solid #000;
+    margin-top: 50px;
+}
+
+
+@media only screen and (max-width: 640px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .menu-section {
+        padding: 0 10px;
+    }
+
+    .menu-item {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-item img {
+        width: 80%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .menu-item div {
+        width: 100%;
+    }
+
+    .desert-beverage {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .desert-beverage div {
+        width: 100%;
+    }
+
+    .main-header h2 {
+        font-size: 24px;
+    }
+
+    .main-header p {
+        font-size: 14px;
+    }
+
+    .main-footer {
+        font-size: 13px;
+        padding: 15px 5px;
+    }
+}
